@@ -1,0 +1,43 @@
+[
+    {
+      "_id": "62dd108697a33318c61857ef",
+      "category": "Sales Marketing",
+      "jobs": [
+        "Sales Manager",
+        "Sales Executive"
+      ]
+    },
+    {
+      "_id": "62dd10867f6aff4b149abe44",
+      "category": "Digital Marketing",
+      "jobs": [
+        "Digital Marketing Manager",
+        "Digital Marketing (Google Ads) Specialist"
+      ]
+    },
+    {
+      "_id": "62dd1086eceeadafc6e7e2d5",
+      "category": "Human Resource",
+      "jobs": [
+        "Human Resource Manager",
+        "HR Admin Trainee"
+      ]
+    },
+    {
+      "_id": "62dd10865fa0ffe7bfe12c45",
+      "category": "Development",
+      "jobs": [
+        "Software Project Manager",
+        "Front End Developer",
+        "Back End Developer (Django)"
+      ]
+    },
+    {
+      "_id": "62dd10861a8ed9d9af8ae8db",
+      "category": "Engineering",
+      "jobs": [
+        "Jr. Cyber Security Engineer"
+       
+      ]
+    }
+  ]

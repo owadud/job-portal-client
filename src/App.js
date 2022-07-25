@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Pages/Header/Header';
+import { Route, Routes } from 'react-router-dom';
+import Banner from './Pages/Banner/Banner';
+import Login from './Pages/Login/Login';
+import SignUp from './Pages/Login/SignUp';
+import NotFound from './Pages/NotFound/NotFound';
+import Jobs from './Pages/Jobs/Jobs';
+import RequireAuth from './Pages/Login/RequireAuth';
+import AddJob from './Pages/AddJob/AddJob';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Banner/>}></Route>
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path='jobs' element={
+          <RequireAuth>
+            <Jobs />
+            </RequireAuth>
+        } 
+        />
+        <Route path='addjob' element={
+          <RequireAuth>
+            <AddJob />
+            </RequireAuth>
+        } 
+        />
+      </Routes>
     </div>
   );
 }
